@@ -1,12 +1,14 @@
 package com.hayvantakip.hayvantakip.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.hayvantakip.hayvantakip.dtos.request.RegisterRequest;
 import com.hayvantakip.hayvantakip.dtos.response.RegisterResponse;
 import com.hayvantakip.hayvantakip.models.User;
 import com.hayvantakip.hayvantakip.repositories.UserRepository;
 
+@Service
 public class AuthService {
     
     private final UserRepository userRepository;
